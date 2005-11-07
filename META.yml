@@ -1,5 +1,5 @@
 name: Acme-NumericMethod
-version: 0.01
+version: 0.02
 abstract: I know numbers
 author: Kang-min Liu <gugod@gugod.org>
 license: perl
@@ -11,4 +11,4 @@ requires:
 no_index:
   directory:
     - inc
-generated_by: Module::Install version 0.36
+generated_by: Module::Install version 0.37

@@ -1,5 +1,5 @@
 package Acme::NumericMethod;
-our $VERSION='0.01';
+our $VERSION='0.02';
 package main;
 use Lingua::EN::WordsToNumbers;
 sub AUTOLOAD {

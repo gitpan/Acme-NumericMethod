@@ -6,4 +6,7 @@ license         ('perl');
 version_from    ('lib/Acme/NumericMethod.pm');
 requires        ('Lingua::EN::WordsToNumbers');
 build_requires  ('Test::More');
+
+auto_install();
+
 &WriteAll;
