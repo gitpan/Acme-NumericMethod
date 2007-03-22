@@ -1,14 +1,15 @@
-name: Acme-NumericMethod
-version: 0.02
 abstract: I know numbers
 author: Kang-min Liu <gugod@gugod.org>
-license: perl
-distribution_type: module
-build_requires:
+build_requires: 
   Test::More: 0
-requires:
-  Lingua::EN::WordsToNumbers: 0
-no_index:
-  directory:
+distribution_type: module
+generated_by: Module::Install version 0.64
+license: perl
+name: Acme-NumericMethod
+no_index: 
+  directory: 
     - inc
-generated_by: Module::Install version 0.37
+    - t
+requires: 
+  Lingua::EN::WordsToNumbers: 0
+version: 0.03

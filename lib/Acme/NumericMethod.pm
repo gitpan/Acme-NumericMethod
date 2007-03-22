@@ -1,5 +1,6 @@
 package Acme::NumericMethod;
-our $VERSION='0.02';
+use v5.8.8;
+our $VERSION='0.03';
 package main;
 use Lingua::EN::WordsToNumbers;
 sub AUTOLOAD {
@@ -20,9 +21,13 @@ __END__
   use Acme::NumericMethod;
   print one(); # 1
 
+=head1 AUTHOR
+
+Kang-min Liu <gugod@gugod.org>
+
 =head1 COPYRIGHT
 
-Copyright 2005 by Kang-min Liu <gugod@gugod.org>.
+Copyright 2005-2007 by Kang-min Liu <gugod@gugod.org>.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
