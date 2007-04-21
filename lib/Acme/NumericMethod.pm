@@ -1,20 +1,26 @@
 package Acme::NumericMethod;
 use v5.8.8;
-our $VERSION='0.03';
-package main;
-use Lingua::EN::WordsToNumbers;
-sub AUTOLOAD {
-    my $n = $AUTOLOAD;
-    $n =~ s/.*:://;
-    my $number = eval 'Lingua::EN::WordsToNumbers->new->parse($n)';
-    $@?0:$number;
+use strict;
+our $VERSION='0.04';
+use Lingua::EN::Words2Nums;
+
+sub import {
+    my $package = (caller)[0];
+    no strict 'refs';
+    *{"${package}::AUTOLOAD"} = sub {
+        no strict;
+        my $n = $AUTOLOAD;
+        $n =~ s/.*:://;
+        return words2nums($n);
+    };
 }
+
 1;
 __END__
 
 =head1 NAME
 
-  Acme::NumericMethod - I know numeric methods
+Acme::NumericMethod - I know numeric methods
 
 =head1 SYNOPSIS
 

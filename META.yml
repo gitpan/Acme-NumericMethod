@@ -1,4 +1,4 @@
-abstract: I know numbers
+abstract: I know numeric methods
 author: Kang-min Liu <gugod@gugod.org>
 build_requires: 
   Test::More: 0
@@ -11,5 +11,6 @@ no_index:
     - inc
     - t
 requires: 
-  Lingua::EN::WordsToNumbers: 0
-version: 0.03
+  Lingua::EN::Words2Nums: 0
+  perl: 5.8.8
+version: 0.04
